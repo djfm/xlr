@@ -1,0 +1,76 @@
+div.bfg-grid {
+	height: 100%;
+}
+
+div.bfg-grid * {
+	box-sizing: border-box;
+}
+
+div.bfg-grid-cells-scrolls-container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+div.cells-and-vscroll-container, div.hscroll-container {
+	display: flex;
+}
+
+div.cells-and-vscroll-container {
+	flex-grow: 1;
+}
+
+div.cells-and-vscroll-container div.cells {
+	flex-grow: 1;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+
+div.hscroll-container div.hscroll {
+	flex-grow: 1;
+	border: 1px solid #ccc;
+	height: 18px;
+}
+
+div.cells-and-vscroll-container div.vscroll {
+	border: 1px solid #ccc;
+	width: 18px;
+}
+
+div.bottom-right-corner {
+	overflow: hidden;
+	width: 18px;
+	height: 18px;
+	background-color: #AAA;
+}
+
+div.bfg-grid div.canvas-holder {
+
+}
+
+div.hscroll, div.vscroll {
+	position: relative;
+}
+
+div.hscroll div.handle, div.vscroll div.handle {
+	overflow: hidden;
+	background-color: black;
+	cursor: pointer;
+	position: absolute;
+}
+
+div.hscroll div.handle.dragged, div.vscroll div.handle.dragged {
+	background-color: #333;
+}
+
+div.hscroll div.handle {
+	height: 100%;
+	width: 70px;
+	left: 0;
+}
+
+div.vscroll div.handle {
+	width: 100%;
+	height: 70px;
+	top: 0;
+}

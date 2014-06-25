@@ -1,0 +1,19 @@
+html {
+    height: 100%;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: 0px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+div.container {
+    height: 100%;
+    padding: 8px 8px 8px 8px;
+    box-sizing: border-box;
+}
